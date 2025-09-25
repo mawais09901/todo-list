@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todo App</title>
 </head>
+
 <body>
-    
+    <div class="app">
+        <aside class="sidebar">
+            <div class="projects-container">
+                <h2>Projects</h2>
+                <ul class="projects"></ul>
+                <button class="add-project">+ Add Project</button>
+            </div>
+        </aside>
+        <div class="main-content-container"></div>
+        <dialog class="add-project-dialog">
+            <form action="">
+                <div class="input-box">
+                    <label for="project-name">Enter Project Name</label>
+                    <input type="text" name="project-name" id="project-name" placeholder="Project Name">
+                </div>
+                <div class="buttons-container">
+                    <button class="submit">Submit</button>
+                    <button class="close-dialog">Close</button>
+                </div>
+            </form>
+        </dialog>
+        <dialog class="add-todo-dialog">
+            <form action="">
+                <div class="input-box">
+                    <label for="todo-title">Todo Title</label>
+                    <input type="text" name="todo-title" id="todo-title" placeholder="Todo Title">
+                </div>
+                <div class="input-box">
+                    <label for="todo-description">Description</label>
+                    <input type="text" name="todo-description" id="todo-description" placeholder="Todo Description">
+                </div>
+                <div class="input-box">
+                    <label for="todo-dueDate">DueDate</label>
+                    <input type="date" name="todo-dueDate" id="todo-dueDate">
+                </div>
+                <div class="input-box">
+                    <label for="todo-priority">Priority</label>
+                    <select name="todo-priority" id="todo-priority">
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                </div>
+                <div class="buttons-container">
+                    <button class="submit-todo">Submit</button>
+                    <button class="close-todo-dialog">Close</button>
+                </div>
+            </form>
+        </dialog>
+    </div>
 </body>
+
 </html>
